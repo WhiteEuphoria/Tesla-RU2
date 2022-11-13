@@ -39,6 +39,38 @@ h2{
     margin: 0;
 
 }
+.outer{
+    padding-bottom: 70px;
+}
+@media (max-width: 767px) {
+    .outer {
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 421px) {
+    .outer {
+        padding-bottom: 30px;
+    }
+}
+.title{
+    font-size: 32px;
+}
+@media (max-width: 767px) {
+    .title {
+            font-size: 24px;
+        }
+}
+@media (max-width: 421px) {
+    .title {
+        font-size: 18px;
+    }
+}
+.text-s{
+    font-size: 16px;
+}
+.text-m{
+    font-size:18px;
+}
 .logo{
     width: 300px;
     height: 60px
@@ -314,9 +346,9 @@ footer{
     margin-left: 180px;
     margin-top: 24px;
 }
-.upper-block h2{
+/* .upper-block h2{
     margin: 0;
-}
+} */
 .bottom-block{
     padding-bottom:68px;
     padding-top:68px;
@@ -393,11 +425,10 @@ a.anchor {
 }
 .subheading{
     font-size: 32px;
-    font-weight: 300;
+    font-weight: 700;
     text-align: center;
     margin: auto;
     display: block;
-    margin-bottom:100px;
     color: white;
 }
 .calulator-form .wrap{
@@ -456,7 +487,7 @@ a.anchor {
     height: 88px;
     font-family: "Montserrat";
     font-size: 62px;
-    font-weight: 800;
+    font-weight: 400;
     line-height: 88px;
     color: white;
     background-color: transparent;
@@ -472,9 +503,9 @@ label.investment{
     width:100%;
     margin-bottom: 20px
 }
-.calulator-form input{
+/* .calulator-form input{
     padding-right:50px;
-}
+} */
 label.investment {
     height: 93px;
 }
@@ -690,17 +721,26 @@ label.investment {
         padding-bottom:72px;
     }
     .calulator-form .wrap div span:last-child, .calulator-form input, .calulator-form input::placeholder {
-        font-size: 32px;
+        font-size: 52px;
         line-height: 40px;
-        max-width: 230px;
-        height: 40px;
+        max-width: 90%;
+        height: 80px;
     }
     label.investment {
-        font-size: 32px;
+        font-size: 57px;
     }
-    .calulator-form input {
+    /* .calulator-form input {
         padding-right: 22px;
+    } */
+    .calulator-form .wrap div{
+        width: 100%;
+        margin: auto;
     }
+    .calulator-form .wrap div span {
+        text-align: center;
+        margin-top: 15px;
+    }
+   
 }
 @media (max-width: 767px) {
     .header_wrap, footer {
@@ -840,29 +880,21 @@ label.investment {
         font-weight:700;
         line-height:40px;
     }
-    .subheading{
-        font-size:20px;
-        font-weight:500;
-        line-height: 32px;
-    }
+ 
     .subheading br{
         display: inline;
     }
     .calulator-form .wrap div span:first-child {
-        font-size: 14px;
+        font-size: 20px;
         line-height: 24px;
 
     }
     .calulator-form .wrap div span:last-child, .calulator-form input, .calulator-form input::placeholder {
-        font-size: 28px;
+        font-size: 50px;
         line-height: 35px;
-        max-width: 147px;
-        height: 40px;
+        height: 80px;
     }
-    #result,input.investment{
-        max-width:181px;
-        width: 181px;
-    }
+
     .calulator-form .registration-btn {
         width: 100%;
     }
@@ -924,9 +956,9 @@ label.investment {
     label.investment {
         font-size: 28px;
     }
-    .calulator-form input::placeholder{
+    /* .calulator-form input::placeholder{
         text-align: right;
-    }
+    } */
 }
 @media (max-width: 521px) {
     .logo{
@@ -936,21 +968,19 @@ label.investment {
     }
 @media (max-width: 425px){
     #result, input.investment {
-        max-width: 181px;
         width: 100%;
-        min-width: 140px;
     }
     .calulator-form .wrap div span:last-child, .calulator-form input, .calulator-form input::placeholder {
-        font-size: 26px;
+        font-size: 38px;
     }
-    .calulator-form .wrap {
+    /* .calulator-form .wrap {
         gap: 7px;
-    }
-    .calulator-form input {
+    } */
+    /* .calulator-form input {
         padding-right: 17px;
-    }
+    } */
     label.investment {
-        font-size: 26px;
+        font-size: 40px;
     }
 }
 @media (max-width: 345px){
