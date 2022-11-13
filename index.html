@@ -146,12 +146,16 @@
             </span>
             <div class="calulator-form">
                 <div class="wrap">
+
                     <div>
                         <span class="investment-sum">Сумма инвестирования</span>
-                        <input class="investment" name="investment" min="400" type="text" placeholder="400" maxlength="7">
-                        <label class="investment" for="investment">$</label>
+                        <div class="label-div">
+                            <input class="investment" name="investment" min="250" value="250">
+                            <!-- <input type="range" class="investment" name="investment" min="250" max="1000000" value="250" step="1"> -->
+                            <label class="investment" for="investment">$</label>
+                        </div>
                     </div>
-                    <div></div>
+                    <!-- <div></div> -->
                     <div>
                         <span class="result-sum">Результат вложения</span>
                         <span class="result" id="result">9 700$</span>

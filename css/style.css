@@ -392,12 +392,13 @@ a.anchor {
     background-size: 100% 100%;
 }
 .subheading{
-    font-size: 18px;
+    font-size: 32px;
     font-weight: 300;
     text-align: center;
     margin: auto;
     display: block;
     margin-bottom:100px;
+    color: white;
 }
 .calulator-form .wrap{
     display: flex;
@@ -405,53 +406,76 @@ a.anchor {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 300px
+    height: 300px;
+    width: 380px;
+    margin: auto;
+    align-items: center;
 
 }
-.calulator-form .wrap div:nth-child(2){
+
+/* .calulator-form .wrap div:nth-child(2){
     width: 2px;
     height: 280px;
     background-color: white;
-}
+} */
+
 .calulator-form .wrap div{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+
 .calulator-form .wrap div span:first-child{
-    font-size: 24px;
+    font-size: 22px;
     font-weight:300;
     line-height:40px;
+    text-align: center;
+    color: white;
 }
 .calulator-form .wrap div span:last-child{
     font-family: "Montserrat";
     font-size: 72px;
     font-weight: 800;
     line-height: 88px;
-    width: 490px;
+    width: 100%;
+    color: white
 }
 .calulator-form .wrap div:first-child{
     align-items: flex-end;
     text-align: right;
 }
+.label-div{
+    position: relative;
+}
+.label-div label{
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
 .calulator-form input, label.investment{
     height: 88px;
     font-family: "Montserrat";
-    font-size: 72px;
+    font-size: 62px;
     font-weight: 800;
     line-height: 88px;
     color: white;
     background-color: transparent;
-    border: none;
-    text-align: right;
+    /* border: none; */
+    /* text-align: right; */
+    border-radius: 8px;
+}
+label.investment{
+    padding-right: 20px;
+    
 }
 .calulator-form input{
-    width:490px;
+    width:100%;
+    margin-bottom: 20px
 }
 .calulator-form input{
     padding-right:50px;
 }
 label.investment {
-    margin-top: -88px;
     height: 93px;
 }
 
@@ -672,9 +696,7 @@ label.investment {
         height: 40px;
     }
     label.investment {
-        margin-top: -62px;
         font-size: 32px;
-        height: 67px;
     }
     .calulator-form input {
         padding-right: 22px;
@@ -827,7 +849,7 @@ label.investment {
         display: inline;
     }
     .calulator-form .wrap div span:first-child {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 24px;
 
     }
@@ -900,9 +922,7 @@ label.investment {
         width: 12px;
     }
     label.investment {
-        margin-top: -63px;
         font-size: 28px;
-        height: 67px;
     }
     .calulator-form input::placeholder{
         text-align: right;
@@ -930,9 +950,7 @@ label.investment {
         padding-right: 17px;
     }
     label.investment {
-        margin-top: -64px;
         font-size: 26px;
-        height: 68px;
     }
 }
 @media (max-width: 345px){
