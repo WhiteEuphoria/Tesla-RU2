@@ -1,0 +1,878 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #111111;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Roboto',sans-serif;
+    margin:0;
+}
+p{
+    margin: 0;
+    font-size:18px;
+    font-weight:300;
+    line-height:32px;
+    text-align: left;
+    font-family: 'Roboto',sans-serif;
+}
+h1{
+    font-weight: 900;
+    font-size:43px;
+    line-height:56px;
+    font-family: 'Roboto',sans-serif;
+    margin-bottom:16px;
+    margin-top: 0;
+}
+h2{
+    font-weight: 900;
+    font-size:32px;
+    line-height:40px;
+    font-family: 'Roboto',sans-serif;
+    margin: 0;
+
+}
+.legal-content{
+    padding-top: 20px;
+    padding-bottom:20px;
+
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    z-index: +2;
+}
+.header_wrap{
+    height: 88px;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.header_group nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:0;
+    list-style: none;
+    font-size:20px;
+    gap: 30px;
+}
+.header_group nav ul a{
+    color: rgba(255, 255, 255, 1);
+    text-decoration:none;
+    font-family: 'Roboto',sans-serif;
+}
+.menu_btn{
+    display: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 32px;
+    width: 50px;
+    cursor: pointer;
+    background-image: url(../fonts/hamburger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.menu_btn.active {
+    background-image: url(../fonts/close.svg);
+}
+.registration-btn{
+    font-weight:900;
+    font-size:14px;
+    padding:12px 24px;
+    background-color: rgba(224, 15, 41, 1);
+}
+.registration-btn:hover{
+    background-color: rgba(192, 18, 40, 1);
+}
+.bottom-form {
+    padding-top: 175px;
+    padding-bottom: 252px;
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.bottom-form h2{
+    text-align: center;
+    margin: auto;
+    margin-bottom:8px;
+}
+form{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width:416px;
+}
+form input{
+    width: 100%;
+    height: 48px;
+    padding:12px;
+    padding-left:44px;
+    margin-top:8px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.input_wrapper .wrap{
+    position: relative;
+}
+.icon {
+    color: #BFBFBF;
+    position: absolute;
+    margin-left: 15px;
+    font-size: 22px;
+    left: 0;
+    top: 19px;
+}
+.intro{
+    position: relative;
+}
+.video{
+    position: relative;
+    background-image: url("../images/poster.png");
+    background-size: 100% 100%;
+}
+.video.active{
+    background-image:none;
+}
+.play{
+    position: absolute;
+    top:50%;
+    margin-top:-33px;
+    margin-left: -33px;
+    left: 50%;
+    cursor:pointer;
+}
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-40px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+.down {
+    position: absolute;
+    bottom: 16px;
+    right: 50%;
+    margin-right: -96px;
+    animation: float 5s cubic-bezier(0.35, 0.04, 0.66, 0.97) infinite;
+    cursor: pointer;
+}
+input:hover + .icon, input:focus + .icon{
+    color: #111111;
+}
+input:focus{
+    outline:none;
+}
+.iti{
+    width:416px;
+    margin-top:8px;
+}
+.iti input{
+    width: 100%;
+}
+.submit_btn{
+    margin-top:8px;
+    width:416px;
+    height: 48px;
+    font-size:18px;
+    color: white;
+    border:none;
+    font-family: 'Roboto',sans-serif;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    cursor:pointer;
+    text-transform: uppercase;
+}
+.iti__flag-container{
+    height:48px;
+}
+input::placeholder, .iti__country-name, .iti__selected-dial-code{
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    color: rgba(191, 191, 191, 1);
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+footer{
+    height:104px;
+    padding-top:24px;
+    padding-left:70px;
+    padding-right:70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-items{
+    display: flex;
+    gap: 32px;
+}
+.footer-items a{
+    color: rgba(255, 255, 255, 1);
+    text-decoration:none;
+    font-family: 'Roboto',sans-serif;
+    font-size:18px;
+    font-weight:300;
+}
+.footer_wrap span{
+    font-family: Nunito;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: rgba(60, 60, 60, 1);
+}
+.intro .wrapper{
+    display: flex;
+    gap: 32px;
+    padding-top:140px;
+    padding-bottom:228px;
+}
+.intro{
+    background-image: url("../images/bg-intro.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.video, .form{
+    width: 50%;
+}
+.form{
+    width: 50%;
+}
+.intro form, .intro .submit_btn,.intro .iti {
+    margin-left: 0;
+    width: 304px;
+}
+.form span{
+    font-weight: 300;
+    font-size:20px;
+}
+.content{
+    position: relative;
+    top: 88px;
+}
+.upper-block{
+    padding-top:72px;
+    padding-bottom:72px;
+}
+.upper-block div {
+    display: flex;
+    gap: 32px;
+    margin-left: 180px;
+    margin-top: 24px;
+}
+.upper-block h2{
+    margin: 0;
+}
+.bottom-block{
+    padding-bottom:68px;
+    padding-top:68px;
+    background-image: url("../images/bg-about.png");
+    background-size: 100% 100%;
+}
+.bottom-block .wrap{
+    display: flex;
+    justify-content: space-around;
+}
+.bottom-block div span:first-child{
+    font-size:52px;
+    font-weight:900;
+    display: block;
+    text-align: center;
+    font-family: "Montserrat";
+}
+.bottom-block div span:last-child{
+    font-size:22px;
+    font-weight:300;
+    display: block;
+    text-align: center;
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: -86px;
+    visibility: hidden;
+}
+.statistics h2{
+    margin-bottom:32px;
+}
+.statistics{
+    padding-top:120px;
+    padding-bottom:97px;
+}
+.table-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.table-row{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    color:rgba(183, 183, 183, 1);
+    border-bottom: solid 1px rgba(183, 183, 183, 1);
+    padding-top:24px;
+    padding-bottom:24px;
+    align-items: center;
+}
+.country{
+    align-items: center;
+    display: flex;
+}
+.table-row img{
+    margin-right:8px;
+    width:40px;
+}
+.header-row{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+    color: white;
+}
+.date br{
+    display: none;
+}
+.calculator{
+    padding:217px 0;
+    background-image: url("../images/bg-calculator.png");
+    background-size: 100% 100%;
+}
+.subheading{
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-bottom:100px;
+}
+.calulator-form .wrap{
+    display: flex;
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+}
+.calulator-form .wrap div:nth-child(2){
+    width: 2px;
+    height: 280px;
+    background-color: white;
+}
+.calulator-form .wrap div{
+    display: flex;
+    flex-direction: column;
+}
+.calulator-form .wrap div span:first-child{
+    font-size: 24px;
+    font-weight:300;
+    line-height:40px;
+}
+.calulator-form .wrap div span:last-child{
+    font-family: "Montserrat";
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 88px;
+    width: 490px;
+}
+.calulator-form .wrap div:first-child{
+    align-items: flex-end;
+    text-align: right;
+}
+.calulator-form input, label.investment{
+    height: 88px;
+    font-family: "Montserrat";
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 88px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    text-align: right;
+}
+.calulator-form input{
+    width:490px;
+}
+.calulator-form input{
+    padding-right:50px;
+}
+label.investment {
+    margin-top: -88px;
+    height: 93px;
+}
+
+.calulator-form input::placeholder{
+    font-family: "Montserrat";
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 88px;
+    color: white;
+    text-align: right;
+}
+.calulator-form .registration-btn {
+    margin: auto;
+    margin-top: 24px;
+    width: 304px;
+    display: block;
+    text-decoration: none;
+}
+.subheading br{
+    display: none;
+}
+.benefits{
+    padding-top:72px;
+    padding-bottom:136px;
+}
+.line{
+    background: rgba(255, 255, 255, 1);
+    height: 3px;
+    width: 100%;
+    margin-top: 13px;
+}
+.benefits-wrap{
+    display: flex;
+    gap: 32px;
+}
+.benefits p {
+    font-size: 21px;
+    line-height: 32px;
+    position: relative;
+    width: 25%;
+}
+.benefits p:before{
+    content: "";
+    display: block;
+    width: 1px;
+    background: #FFFFFF;
+    margin-bottom: 8px;
+}
+.benefits p:first-child:before{
+    height: 148px;
+}
+.benefits p:nth-child(2):before{
+    height: 228px;
+}
+.benefits p:nth-child(3):before{
+    height: 76px;
+}
+.benefits p:last-child:before{
+    height: 316px;
+}
+.benefits p:after {
+    content: "";
+    display: block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+}
+
+@media(min-width: 1300px){
+    .container{
+        width: 1300px!important;
+    }
+}
+@media(max-width: 1300px) {
+    .header_wrap {
+        gap: 20px;
+    }
+    .header_wrap, footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media(max-width: 1200px) {
+    .intro .wrapper {
+        padding-top: 60px;
+        padding-bottom: 228px;
+    }
+    .header_wrap {
+      justify-content: space-between;
+    }
+    .header_wrap.active {
+        justify-content: space-between;
+        background-color: #0A0A0A;
+    }
+
+    .header_group nav ul{
+        position: absolute;
+        right: -100%;
+        top: 86px;
+        flex-direction: column;
+        width: 280px;
+        text-align: left;
+        transition: 0.4s;
+        padding-left: 24px;
+        padding-right: 24px;
+        height: 100vh;
+        justify-content: flex-start;
+        gap: 40px;
+        align-items: flex-start;
+        background-color: #0A0A0A;
+        margin-top:0;
+    }
+
+    .nav_menu.active {
+        right: 0;
+        overflow: scroll;
+    }
+
+    .menu_btn {
+        display: block;
+    }
+    .footer-items{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .intro .wrapper {
+        flex-direction: column;
+    }
+    .video, .form {
+        width: 100%;
+    }
+    .video {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+    }
+    .video iframe {
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+    }
+    .intro form, .intro .submit_btn, .intro .iti {
+        margin-left: auto;
+        width: 416px;
+    }
+    .form span {
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    .calculator{
+        padding:185px 0;
+        background-size: cover;
+        background-position: center;
+    }
+}
+@media (max-width: 992px) {
+    .header_group nav ul{
+       width: 100%;
+    }
+    .header-row{
+        font-size: 20px;
+    }
+    .statistics{
+        padding-top:72px;
+        padding-bottom:72px;
+    }
+    .calulator-form .wrap div span:last-child, .calulator-form input, .calulator-form input::placeholder {
+        font-size: 32px;
+        line-height: 40px;
+        max-width: 230px;
+        height: 40px;
+    }
+    label.investment {
+        margin-top: -62px;
+        font-size: 32px;
+        height: 67px;
+    }
+    .calulator-form input {
+        padding-right: 22px;
+    }
+}
+@media (max-width: 767px) {
+    .header_wrap, footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .bottom-form{
+        padding-top:220px;
+        padding-bottom:220px;
+        background-image: url("../images/bg-mob.png");
+    }
+    h2{
+        font-size:24px;
+        line-height:32px;
+    }
+    form, .iti, .submit_btn {
+        width: 100%;
+        max-width: 416px;
+    }
+    footer{
+        flex-direction: column;
+        gap: 24px;
+        align-items: flex-start;
+    }
+    .intro {
+        background-image: url("../images/bg-intro-mob.png");
+    }
+    .intro .wrapper {
+        padding-top: 16px;
+        padding-bottom:73px;
+        gap: 16px;
+    }
+    h1{
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 0;
+    }
+    .form span {
+        margin-left: 0;
+        font-size:16px;
+        text-align: left;
+    }
+    .intro form, .intro .submit_btn, .intro .iti, form,  .submit_btn,  .iti {
+        margin-left: auto;
+        width: 100%;
+        max-width: 600px;
+    }
+    @keyframes float {
+        0% {
+            transform: translatey(0px);
+        }
+        50% {
+            transform: translatey(-15px);
+        }
+        100% {
+            transform: translatey(0px);
+        }
+    }
+    .down img{
+        max-width: 124px;
+    }
+    .down {
+        bottom: 0;
+        margin-right: -62px;
+    }
+    .play img{
+        width: 33px;
+        height: 33px;
+    }
+    .play {
+        margin-top: -16.5px;
+        margin-left: -16.5px;
+    }
+    .upper-block {
+        padding-top: 52px;
+        flex-direction: column;
+    }
+    .upper-block div{
+        flex-direction: column;
+    }
+    .upper-block div {
+        display: flex;
+        gap: 16px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .bottom-block {
+        padding-bottom: 57px;
+        padding-top: 57px;
+        background-size: cover;
+    }
+    .bottom-block .wrap{
+        flex-direction: column;
+        gap: 54px;
+    }
+    .bottom-block div span:last-child{
+        font-size:28px;
+        font-weight:400;
+    }
+    .statistics h2{
+        margin-bottom: 16px;
+    }
+    .header-row{
+        display: none;
+    }
+    .table-row{
+        background: #222222;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        padding:16px;
+        border: none;
+        color: rgba(255, 255, 255, 1);
+        grid-template-columns: 1fr 1fr;
+        row-gap: 16px;
+        margin-bottom: 15px;
+    }
+    .table-desktop{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .date br{
+        display: inline;
+    }
+    .country {
+        justify-content: flex-end;
+    }
+    .user, .sum{
+        grid-column: 1/-1;
+        text-align: center;
+    }
+    .user{
+        font-weight: 500;
+    }
+    .sum{
+        font-size: 32px;
+        font-weight:700;
+        line-height:40px;
+    }
+    .subheading{
+        font-size:20px;
+        font-weight:500;
+        line-height: 32px;
+    }
+    .subheading br{
+        display: inline;
+    }
+    .calulator-form .wrap div span:first-child {
+        font-size: 16px;
+        line-height: 24px;
+
+    }
+    .calulator-form .wrap div span:last-child, .calulator-form input, .calulator-form input::placeholder {
+        font-size: 28px;
+        line-height: 35px;
+        max-width: 147px;
+        height: 40px;
+    }
+    #result,input.investment{
+        max-width:181px;
+        width: 181px;
+    }
+    .calulator-form .registration-btn {
+        width: 100%;
+    }
+    .benefits{
+        padding-bottom: 112px;
+    }
+    .benefits-wrap{
+        display: block;
+    }
+    .benefits p{
+        width: 100%;
+        padding-left: 20px;
+        padding-bottom: 40px;
+    }
+    .line{
+        display: none;
+    }
+    .benefits p:before {
+        position: absolute;
+        left: 3px;
+        top: 13px;
+        height: 100%!important;
+    }
+    .benefits p:last-child:before {
+        display: none;
+    }
+    .benefits p:after {
+        top: 12px;
+        left: 0;
+        height:8px;
+        width:8px;
+    }
+    .benefits h2:before {
+        position: absolute;
+        left: 3px;
+        top: 13px;
+        height: 100%!important;
+        content: "";
+        display: block;
+        width: 1px;
+        background: #FFFFFF;
+    }
+    .benefits h2{
+        padding-bottom: 16px;
+        padding-left: 20px;
+        position: relative;
+    }
+    .benefits h2:after {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        background: #FFFFFF;
+        position: absolute;
+        top: 9px;
+        left: -2px;
+        height: 12px;
+        width: 12px;
+    }
+    label.investment {
+        margin-top: -63px;
+        font-size: 28px;
+        height: 67px;
+    }
+    .calulator-form input::placeholder{
+        text-align: right;
+    }
+}
+@media (max-width: 425px){
+    #result, input.investment {
+        max-width: 181px;
+        width: 100%;
+        min-width: 140px;
+    }
+    .calulator-form .wrap div span:last-child, .calulator-form input, .calulator-form input::placeholder {
+        font-size: 26px;
+    }
+    .calulator-form .wrap {
+        gap: 7px;
+    }
+    .calulator-form input {
+        padding-right: 17px;
+    }
+    label.investment {
+        margin-top: -64px;
+        font-size: 26px;
+        height: 68px;
+    }
+}
+@media (max-width: 345px){
+    .calulator-form .wrap div span:first-child {
+        height: 72px;
+    }
+    .calulator-form .wrap {
+        gap: 5px;
+    }
+}

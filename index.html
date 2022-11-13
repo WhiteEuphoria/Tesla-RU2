@@ -1,0 +1,316 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/all.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/grid12.css">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SPACEX</title>
+</head>
+<body>
+
+<header>
+    <div class="header_wrap">
+        <div class="logo">
+            <a href="#top"><img src="fonts/logo.svg" alt></a>
+        </div>
+        <div class="header_group">
+            <nav>
+                <ul class="nav_menu" id="nav_menu">
+                    <li class="dropdown"><a class="header_link" href="#about">О проекте </a>
+                    </li>
+                    <li class="dropdown"><a class="header_link" href="#statistics">Статистика</a>
+                    </li>
+                    <li class="dropdown"><a class="header_link" href="#income">Заработок</a>
+                    </li>
+                    <li class="dropdown"><a class="header_link" href="#calculator">Калькулятор</a>
+                    </li>
+                    <li class="dropdown"><a class="header_link" href="#benefits">Преимущества</a>
+                    </li>
+                    <li class="dropdown"><a class="registration-btn" href="#form">Начать зарабатывать</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu_btn" id="hamburger">
+            </button>
+        </div>
+    </div>
+</header>
+<div class="content">
+    <section class="intro">
+        <div class="container">
+            <div class="wrapper">
+                
+                <div class="form">
+                    <h1>Подключитесь к проекту Илона Маска и зарабатывайте от 4000$ ежемесячно!</h1>
+                    <span>Откройте счёт и начните зарабатывать</span>
+                    <form action="api.php" method="POST" id="leadform1">
+                        <div class="input_wrapper">
+                            <div class="wrap">
+                                <input type="text" name="firstname" placeholder="Имя" required id="fname">
+                                <label class="icon" for="fname"><i class="fas fa-user"></i></label>
+                            </div>
+                            <div class="wrap">
+                                <input type="text" name="lastname" placeholder="Фамилия" required id="lname">
+                                <label class="icon" for="lname"><i class="fas fa-user"></i></label>
+                            </div>
+                            <div class="wrap">
+                                <label class="icon" for="email1"> <i class="fad fa-envelope"></i></label>
+                                <input type="email" name="email" placeholder="Email" required id="email1">
+                            </div>
+                            <input type="tel" name="phone1" placeholder required>
+                            
+                            <input type="hidden" name="click_id" value="<?=$_GET['subid']?>">
+                            <input type="hidden" name="sub1" value="<?=$_GET['sub1']?>">
+                            <input type="hidden" name="sub2" value="<?=$_GET['sub2']?>">
+                            <input type="hidden" name="sub3" value="<?=$_GET['sub3']?>">
+                            <input type="hidden" name="p" value="<?=$_GET['p']?>">
+
+                            <button class="submit_btn registration-btn" type="submit">
+                                Начать зарабатывать
+                            </button>
+                        </div>
+                        <div class="form_message error inactive" style="margin:15px 0;background-color: #ffd4d4;border: 2px dashed #ce0909;border-radius: 10px;padding: 20px;max-width: 350px;"></div>
+                    </form>
+                </div>
+                <div class="video active">
+                    <!--                    <div class="poster"><a class="play"><img src="-->
+                    <!--?//=$path;?-->
+                    <!--img/play.svg"></a></div>-->
+                    <iframe
+                        src="https://player.vimeo.com/video/658591334?h=2d71593345&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="down"><img src="fonts/down.svg"></a>
+    </section>
+    <a class="anchor" id="about"></a>
+    <section class="about">
+        <div class="container">
+            <div class="upper-block">
+                <h2>О проекте </h2>
+                <div><p>SpaceX System - это система автотрейдинга от гения Илона Маска. В ее основу входят передовые
+                        разработки и вычислительные мощности космического гиганта SpaceX, что делает ее передовой
+                        технологией в мире финансов.
+                    </p>
+                    <p>Алгоритм работает на основе считывания и анализа инфополя, а также - изменения котировок опционов
+                        в ста самых влиятельных биржах мира. В совокупности с искусственным интеллектом, система
+                        позволяет проделывать успешные сделки в 98% случаев.</p></div>
+            </div>
+        </div>
+        <a class="anchor" id="statistics"></a>
+        <div class="bottom-block">
+            <div class="container">
+                <div class="wrap">
+                    <div><span>3928</span>
+                        <span>инвесторов</span></div>
+                    <div><span>993К $</span>
+                        <span>вложенных средств</span></div>
+                    <div><span>5.4М $</span>
+                        <span>выведенных средств</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a class="anchor" id="income"></a>
+    <section class="statistics">
+        <div class="container">
+            <h2>Вывод средств участников SpaceX System в онлайн режиме</h2>
+            <div class="table-desktop">
+                <div class="table-row header-row">
+                    <div class="date">Дата и время</div>
+                    <div class="country">Страна</div>
+                    <div class="user">Пользователь</div>
+                    <div class="sum">Сумма</div>
+                </div>
+                <div id="deals_wrapper">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <a class="anchor" id="calculator"></a>
+    <section class="calculator">
+        <div class="container">
+            <span class="subheading">
+                Просчитайте, сколько Вы<br> заработаете с SpaceX за первые 3 <br>месяца
+            </span>
+            <div class="calulator-form">
+                <div class="wrap">
+                    <div>
+                        <span class="investment-sum">Сумма инвестирования</span>
+                        <input class="investment" name="investment" min="400" type="text" placeholder="400" maxlength="7">
+                        <label class="investment" for="investment">$</label>
+                    </div>
+                    <div></div>
+                    <div>
+                        <span class="result-sum">Результат вложения</span>
+                        <span class="result" id="result">9 700$</span>
+                    </div>
+                </div>
+                <a href="#form" class="submit_btn registration-btn">
+                    Начать зарабатывать
+                </a>
+            </div>
+        </div>
+    </section>
+    <a class="anchor" id="benefits"></a>
+    <section class="benefits">
+        <div class="container">
+            <h2>Преимущества</h2>
+            <div class="line"></div>
+            <div class="benefits-wrap">
+                <p>Низкий порог входа: начинать инвестировать можно с 400 долларов.</p>
+                <p>Полная автоматизация всех процессов, обеспечивающая крупный доход даже тем, кто не имеет опыта.
+                    Первая прибыль в течение всего одной недели.</p>
+                <p>Алгоритм рассчитывает 92 100 вариантов событий в секунду и прогнозирует наиболее выгодные сделки. Все
+                    риски сведены к нулю, ведь его точность достигает 98%.</p>
+                <p>Технология есть только у проверенных брокеров с надежной репутацией и лицензией европейского
+                    образца</p>
+            </div>
+        </div>
+    </section>
+    <a class="anchor" id="form"></a>
+    <section class="bottom-form">
+        <div class="container">
+            <h2>Откройте счёт <br>и начните зарабатывать</h2>
+            <form action="api.php" method="POST" id="leadform2">
+                <div class="input_wrapper">
+                    <div class="wrap">
+                        <input type="text" name="firstname" placeholder="Имя" required id="fname2">
+                        <label class="icon" for="fname2"><i class="fas fa-user"></i></label>
+                    </div>
+                    <div class="wrap">
+                        <input type="text" name="lastname" placeholder="Фамилия" required id="lname2">
+                        <label class="icon" for="lname2"><i class="fas fa-user"></i></label>
+                    </div>
+                    <div class="wrap">
+                        <input type="email" name="email" placeholder="Email" id="email2" required>
+                        <label class="icon" for="email2"> <i class="fad fa-envelope"></i></label>
+                    </div>
+
+
+                    <input type="tel" name="phone2" placeholder id="phone2" required>
+                    
+                    <input type="hidden" name="click_id" value="<?=$_GET['subid']?>">
+                    <input type="hidden" name="sub1" value="<?=$_GET['sub1']?>">
+                    <input type="hidden" name="sub2" value="<?=$_GET['sub2']?>">
+                    <input type="hidden" name="sub3" value="<?=$_GET['sub3']?>">
+                    <input type="hidden" name="p" value="<?=$_GET['p']?>">
+
+                    <button class="submit_btn registration-btn" type="submit">
+                        Начать зарабатывать
+                    </button>
+                </div>
+                <div class="form_message error inactive" style="margin:15px 0;background-color: #ffd4d4;border: 2px dashed #ce0909;border-radius: 10px;padding: 20px;max-width: 350px;"></div>
+                <style>
+                    .form_message.error.inactive{
+                        display: none;
+                        color: black;
+                    }
+                    .form_message.error.active{
+                        display: block;
+                    }
+                </style>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_wrap">
+            <div class="logo">
+                <a href="#top"><img src="fonts/logo.svg" alt></a>
+            </div>
+            <span>©2022 All rights Reserved</span>
+        </div>
+        <div class="footer-items"><a href="conditions">Политика конфиденциальности</a><a href="politics">Условия и положения</a></div>
+    </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+
+    var arrOfData = [
+        {
+            name: "Германия",
+            img_src: "/images/ge.svg",
+        },
+        {
+            name: "Великобритания",
+            img_src: "/images/gb.svg",
+        },
+        {
+            name: "Франция",
+            img_src: "/images/fr.svg",
+        },
+        {
+            name: "США",
+            img_src: "/images/usa.svg",
+        },
+        {
+            name: "Израиль",
+            img_src: "/images/isr.svg",
+        },
+        {
+            name: "Канада",
+            img_src: "/images/cad.svg",
+        },
+        {
+            name: "Швейцария",
+            img_src: "/images/sw.svg",
+        },
+        {
+            name: "Чехия",
+            img_src: "/images/ch.svg",
+        },
+        {
+            name: "Италия",
+            img_src: "/images/it.svg",
+        },
+        {
+            name: "Испания",
+            img_src: "/images/esp.svg",
+        },
+        {
+            name: "Швеция",
+            img_src: "/images/sv.png",
+        },
+    ]
+</script>
+<script src="js/script.js"></script>
+
+<link rel="stylesheet" href="intl/intlTelInput.css">
+<script src="intl/intlTelInput.js"></script>
+<script>
+    let inputs = document.querySelectorAll("input[type=tel]");
+    if ( inputs.length > 0 ) {
+        for ( let i = 0; i < inputs.length; i++ ) {
+        window.intlTelInput(inputs[i], {
+          autoHideDialCode: true,
+          formatOnDisplay: false,
+          geoIpLookup: function(callback) {
+              $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+                  $('.country').val(resp.country);
+                  var countryCode = (resp && resp.country) ? resp.country : "";
+                  callback(countryCode);
+              });
+          },
+          hiddenInput: "full_number",
+          initialCountry: "auto",
+          nationalMode: true,
+          placeholderNumberType: "MOBILE",
+          separateDialCode: true,
+          utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    }
+}
+</script>
+
+</body></html>
