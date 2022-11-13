@@ -300,10 +300,10 @@ footer{
     font-weight: 300;
     font-size:20px;
 }
-.content{
+/* .content{
     position: relative;
     top: 88px;
-}
+} */
 .upper-block{
     padding-top:72px;
     padding-bottom:72px;
@@ -322,6 +322,7 @@ footer{
     padding-top:68px;
     background-image: url("../images/bg-about.png");
     background-size: 100% 100%;
+    color: white
 }
 .bottom-block .wrap{
     display: flex;
@@ -400,9 +401,12 @@ a.anchor {
 }
 .calulator-form .wrap{
     display: flex;
-    gap:15px;
+    /* gap:15px; */
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    height: 300px
+
 }
 .calulator-form .wrap div:nth-child(2){
     width: 2px;
@@ -549,8 +553,8 @@ label.investment {
 }
 @media(max-width: 1200px) {
     .intro .wrapper {
-        padding-top: 60px;
-        padding-bottom: 228px;
+        padding-top: 120px;
+        padding-bottom: 178px;
     }
     .header_wrap {
       justify-content: space-between;
@@ -703,7 +707,7 @@ label.investment {
         background-image: url("../images/bg-intro-mob.png");
     }
     .intro .wrapper {
-        padding-top: 16px;
+        padding-top: 96px;
         padding-bottom:73px;
         gap: 16px;
     }
