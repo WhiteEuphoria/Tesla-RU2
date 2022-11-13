@@ -495,10 +495,7 @@ a.anchor {
     /* text-align: right; */
     border-radius: 8px;
 }
-label.investment{
-    padding-right: 20px;
-    
-}
+
 .calulator-form input{
     width:100%;
     margin-bottom: 20px
@@ -740,6 +737,9 @@ label.investment {
         text-align: center;
         margin-top: 15px;
     }
+    .label-div label{
+        right: 40px;
+    }
    
 }
 @media (max-width: 767px) {
@@ -954,7 +954,7 @@ label.investment {
         width: 12px;
     }
     label.investment {
-        font-size: 28px;
+        font-size: 50px;
     }
     /* .calulator-form input::placeholder{
         text-align: right;
