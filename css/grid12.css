@@ -214,14 +214,19 @@
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .container {
     width: 750px;
   }
-}
-@media (min-width: 992px) {
+} */
+@media (max-width: 1200px) {
   .container {
-    width: 970px;
+    width: 80%
+  }
+}
+@media (max-width: 580px) {
+  .container {
+    width: 90%
   }
 }
 @media (min-width: 1200px) {

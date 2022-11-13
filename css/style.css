@@ -5,10 +5,15 @@ html {
     scroll-behavior: smooth;
 }
 body{
-    background-color: #111111;
-    color: rgba(255, 255, 255, 1);
+    background-color: white;
+    /* background-color: black; */
+    /* color: rgba(255, 255, 255, 1); */
+    color: black;
     font-family: 'Roboto',sans-serif;
     margin:0;
+}
+.form{
+    color: rgba(255, 255, 255, 1);
 }
 p{
     margin: 0;
@@ -33,6 +38,10 @@ h2{
     font-family: 'Roboto',sans-serif;
     margin: 0;
 
+}
+.logo{
+    width: 300px;
+    height: 60px
 }
 .player,
 .player *,
@@ -513,17 +522,27 @@ label.investment {
     top: -6px;
     left: -6px;
 }
+@media(max-width: 1350px) {
+    .logo{
+        width: 250px;
+        height: 50px;
+}
 
+}
 @media(min-width: 1300px){
     .container{
         width: 1300px!important;
     }
 }
 @media(max-width: 1300px) {
-    .header_wrap {
+    /* .header_wrap {
         gap: 20px;
+    } */
+    .logo {
+        width: 200px;
+        height: 45px;
     }
-    .header_wrap, footer {
+    .footer {
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -538,25 +557,32 @@ label.investment {
     }
     .header_wrap.active {
         justify-content: space-between;
-        background-color: #0A0A0A;
+        /* background-color: #0A0A0A; */
     }
-
+    .header_wrap {
+        height: 82px;
+    }
+    .nav_menu.active {
+        padding-top: 30px;
+    }
     .header_group nav ul{
         position: absolute;
         right: -100%;
-        top: 86px;
+        top: 90px;
         flex-direction: column;
         width: 280px;
         text-align: left;
         transition: 0.4s;
         padding-left: 24px;
         padding-right: 24px;
-        height: 100vh;
+        height: 80vh;
         justify-content: flex-start;
         gap: 40px;
         align-items: flex-start;
-        background-color: #0A0A0A;
+        /* background-color: #0A0A0A; */
+        background: rgba(0, 0, 0, 0.7);
         margin-top:0;
+        border-radius:30px;
     }
 
     .nav_menu.active {
@@ -576,6 +602,7 @@ label.investment {
     }
     .video, .form {
         width: 100%;
+        text-align: center;
     }
     .video {
         height: 100%;
@@ -595,14 +622,19 @@ label.investment {
         width: 100vw;
         height: 100%;
     }
+
+
     .intro form, .intro .submit_btn, .intro .iti {
-        margin-left: auto;
-        width: 416px;
+        margin: auto;
+        width: 100%;
+        margin-top: 10px;
     }
     .form span {
         margin: auto;
         display: block;
         text-align: center;
+        margin-bottom: 12px;
+        
     }
     .calculator{
         padding:185px 0;
@@ -612,7 +644,15 @@ label.investment {
 }
 @media (max-width: 992px) {
     .header_group nav ul{
-       width: 100%;
+       width: 80%;
+       margin: auto;
+       align-items: center;
+       padding: 0;
+
+    }
+    .nav_menu.active{
+        right: 20px;
+
     }
     .header-row{
         font-size: 20px;
@@ -675,7 +715,7 @@ label.investment {
     .form span {
         margin-left: 0;
         font-size:16px;
-        text-align: left;
+        text-align: center;
     }
     .intro form, .intro .submit_btn, .intro .iti, form,  .submit_btn,  .iti {
         margin-left: auto;
@@ -864,6 +904,12 @@ label.investment {
         text-align: right;
     }
 }
+@media (max-width: 521px) {
+    .logo{
+        width: 200px;
+        height: 45px;
+        }
+    }
 @media (max-width: 425px){
     #result, input.investment {
         max-width: 181px;
