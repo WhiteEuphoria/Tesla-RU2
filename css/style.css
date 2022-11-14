@@ -119,14 +119,14 @@ header {
     padding-left:0;
     list-style: none;
     font-size:20px;
-    gap: 30px;
+    /* gap: 30px; */
 }
 .header_group nav ul a{
     color: rgba(255, 255, 255, 1);
     text-decoration:none;
     font-family: 'Roboto',sans-serif;
 }
-.menu_btn{
+/* .menu_btn{
     display: none;
     background-color: transparent;
     border: none;
@@ -140,7 +140,65 @@ header {
 }
 .menu_btn.active {
     background-image: url(../fonts/close.svg);
+} */
+/* burger */
+.menu_btn {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
 }
+
+.menu_btn span {
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    width: 100%;
+    height: 2px;
+    background-color: #00BFFF;
+}
+
+.menu_btn::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 2.5px;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.menu_btn::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 2.5px;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+}
+
+.menu_btn.active span {
+    background-color: transparent;
+}
+
+.menu_btn.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+    transition: all 0.5s ease 0s;
+    background-color: red;
+}
+
+.menu_btn.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+    transition: all 0.5s ease 0s;
+    background-color: red;
+}
+/* burger */
 .registration-btn{
     font-weight:900;
     font-size:14px;
@@ -603,52 +661,57 @@ label.investment {
         padding-right: 30px;
     }
 }
+.header_wrap {
+      justify-content: space-between;
+  }
+
+.header_wrap.active {
+      justify-content: space-between;
+      /* background-color: #0A0A0A; */
+  }
+.header_wrap {
+      height: 82px;
+  }
+
+.nav_menu.active {
+      padding-top: 30px;
+  }
+
+.header_group nav ul {
+      position: absolute;
+      right: -100%;
+      top: 90px;
+      flex-direction: column;
+      width: 400px;
+      /* text-align: left; */
+      transition: 0.4s;
+      padding: 0;
+      margin: auto;
+      align-items: center;
+      height: 80vh;
+      justify-content: flex-start;
+      gap: 40px;
+      /* align-items: flex-start; */
+      /* background-color: #0A0A0A; */
+      background: rgba(0, 0, 0, 0.7);
+      margin-top: 0;
+      border-radius: 30px;
+  }
+
+.nav_menu.active {
+      right: 0;
+      /* overflow: scroll; */
+  }
+
+.menu_btn {
+      display: block;
+  }
 @media(max-width: 1200px) {
     .intro .wrapper {
         padding-top: 120px;
         padding-bottom: 178px;
     }
-    .header_wrap {
-      justify-content: space-between;
-    }
-    .header_wrap.active {
-        justify-content: space-between;
-        /* background-color: #0A0A0A; */
-    }
-    .header_wrap {
-        height: 82px;
-    }
-    .nav_menu.active {
-        padding-top: 30px;
-    }
-    .header_group nav ul{
-        position: absolute;
-        right: -100%;
-        top: 90px;
-        flex-direction: column;
-        width: 280px;
-        text-align: left;
-        transition: 0.4s;
-        padding-left: 24px;
-        padding-right: 24px;
-        height: 80vh;
-        justify-content: flex-start;
-        gap: 40px;
-        align-items: flex-start;
-        /* background-color: #0A0A0A; */
-        background: rgba(0, 0, 0, 0.7);
-        margin-top:0;
-        border-radius:30px;
-    }
-
-    .nav_menu.active {
-        right: 0;
-        overflow: scroll;
-    }
-
-    .menu_btn {
-        display: block;
-    }
+  
     .footer-items{
         flex-direction: column;
         gap: 16px;
@@ -697,18 +760,21 @@ label.investment {
         background-size: cover;
         background-position: center;
     }
-}
-@media (max-width: 992px) {
-    .header_group nav ul{
-       width: 80%;
+}  
+.header_group nav ul{
+       /* width: 80%; */
        margin: auto;
        align-items: center;
        padding: 0;
 
     }
-    .nav_menu.active{
-        right: 20px;
+.nav_menu.active{
+    right: 20px;
 
+    }
+@media (max-width: 992px) {
+    .header_group nav ul {
+            width: 80%;
     }
     .header-row{
         font-size: 20px;
