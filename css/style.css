@@ -156,7 +156,7 @@ header {
     left: 8px;
     width: 100%;
     height: 2px;
-    background-color: #00BFFF;
+    background-color: #0075FF;
 }
 
 .menu_btn::after {
@@ -556,7 +556,8 @@ a.anchor {
 
 .calulator-form input{
     width:100%;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    padding-left: 20px;
 }
 /* .calulator-form input{
     padding-right:50px;
@@ -674,7 +675,7 @@ label.investment {
   }
 
 .nav_menu.active {
-      padding-top: 30px;
+      padding-top: 40px;
   }
 
 .header_group nav ul {
