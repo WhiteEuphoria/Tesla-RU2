@@ -50,29 +50,32 @@
             <div class="wrapper">
                 
                 <div class="form">
-                    <h1>Подключитесь к проекту Илона Маска и зарабатывайте от 4000$ ежемесячно!</h1>
+                    <h1>Подключитесь к проекту Илона Маска и 
+                        зарабатывайте от 4000$ ежемесячно!</h1>
                     <span>Откройте счёт и начните зарабатывать</span>
-                    <form action="api.php" method="POST" id="leadform1">
+                    <form action="" method="POST" id="leadform1">
                         <div class="input_wrapper">
                             <div class="wrap">
                                 <input type="text" name="firstname" placeholder="Имя" required id="fname">
-                                <label class="icon" for="fname"><i class="fas fa-user"></i></label>
+                                <!-- <label class="icon" for="fname"><i class="fas fa-user"></i></label> -->
                             </div>
                             <div class="wrap">
                                 <input type="text" name="lastname" placeholder="Фамилия" required id="lname">
-                                <label class="icon" for="lname"><i class="fas fa-user"></i></label>
+                                <!-- <label class="icon" for="lname"><i class="fas fa-user"></i></label> -->
                             </div>
                             <div class="wrap">
-                                <label class="icon" for="email1"> <i class="fad fa-envelope"></i></label>
+                                <!-- <label class="icon" for="email1"> <i class="fad fa-envelope"></i></label> -->
                                 <input type="email" name="email" placeholder="Email" required id="email1">
                             </div>
                             <input type="tel" name="phone1" placeholder required>
-                            
-                            <input type="hidden" name="click_id" value="<?=$_GET['subid']?>">
+                            <!-- <input type="text" name="question-1" placeholder="Сколько вам лет ? " required>
+                            <input type="text" name="question-2" placeholder="Кем вы работаете ?" required>
+                            <input type="text" name="question-3" placeholder="Был ли опыт в инвестировании ?" required> -->
+                            <!-- <input type="hidden" name="click_id" value="<?=$_GET['subid']?>">
                             <input type="hidden" name="sub1" value="<?=$_GET['sub1']?>">
                             <input type="hidden" name="sub2" value="<?=$_GET['sub2']?>">
                             <input type="hidden" name="sub3" value="<?=$_GET['sub3']?>">
-                            <input type="hidden" name="p" value="<?=$_GET['p']?>">
+                            <input type="hidden" name="p" value="<?=$_GET['p']?>"> -->
 
                             <button class="submit_btn registration-btn" type="submit">
                                 Начать зарабатывать
@@ -92,7 +95,7 @@
                 </div>
             </div>
         </div>
-        <a href="#about" class="down"><img src="fonts/down.svg"></a>
+        <!-- <a href="#about" class="down"><img src="fonts/down.svg"></a> -->
     </section>
     <a class="anchor" id="about"></a>
     <section class="about">
@@ -125,15 +128,15 @@
     <a class="anchor" id="income"></a>
     <section class="statistics">
         <div class="container">
-            <h2>Вывод средств участников SpaceX System в онлайн режиме</h2>
+            <h2 >Вывод средств участников SpaceX System в онлайн режиме</h2>
             <div class="table-desktop">
-                <div class="table-row header-row">
+                <div class="w-row table-row header-row ">
                     <div class="date">Дата и время</div>
                     <div class="country">Страна</div>
                     <div class="user">Пользователь</div>
                     <div class="sum">Сумма</div>
                 </div>
-                <div id="deals_wrapper">
+                <div class="deals_wrapper" id="deals_wrapper">
 
                 </div>
             </div>
@@ -171,40 +174,45 @@
     <a class="anchor" id="benefits"></a>
     <section class="benefits">
         <div class="container">
-            <h2>Преимущества</h2>
+            <h2 class="outer">Преимущества</h2>
             <div class="line"></div>
             <div class="benefits-wrap">
+                <div>
                 <p>Низкий порог входа: начинать инвестировать можно с 400 долларов.</p>
                 <p>Полная автоматизация всех процессов, обеспечивающая крупный доход даже тем, кто не имеет опыта.
                     Первая прибыль в течение всего одной недели.</p>
+                </div>    
+                <div>
                 <p>Алгоритм рассчитывает 92 100 вариантов событий в секунду и прогнозирует наиболее выгодные сделки. Все
                     риски сведены к нулю, ведь его точность достигает 98%.</p>
                 <p>Технология есть только у проверенных брокеров с надежной репутацией и лицензией европейского
                     образца</p>
+                 </div>   
             </div>
         </div>
     </section>
     <a class="anchor" id="form"></a>
     <section class="bottom-form">
         <div class="container">
-            <h2>Откройте счёт <br>и начните зарабатывать</h2>
+            <h2 class="outer">Откройте счёт <br>и начните зарабатывать</h2>
             <form action="api.php" method="POST" id="leadform2">
                 <div class="input_wrapper">
                     <div class="wrap">
                         <input type="text" name="firstname" placeholder="Имя" required id="fname2">
-                        <label class="icon" for="fname2"><i class="fas fa-user"></i></label>
+                        <!-- <label class="icon" for="fname2"><i class="fas fa-user"></i></label> -->
                     </div>
                     <div class="wrap">
                         <input type="text" name="lastname" placeholder="Фамилия" required id="lname2">
-                        <label class="icon" for="lname2"><i class="fas fa-user"></i></label>
+                        <!-- <label class="icon" for="lname2"><i class="fas fa-user"></i></label> -->
                     </div>
                     <div class="wrap">
                         <input type="email" name="email" placeholder="Email" id="email2" required>
-                        <label class="icon" for="email2"> <i class="fad fa-envelope"></i></label>
+                        <!-- <label class="icon" for="email2"> <i class="fad fa-envelope"></i></label> -->
+                        
                     </div>
 
 
-                    <input type="tel" name="phone2" placeholder id="phone2" required>
+                    <input class="bottom-form__tel"type="tel" name="phone2" placeholder id="phone2" required>
                     
                     <input type="hidden" name="click_id" value="<?=$_GET['subid']?>">
                     <input type="hidden" name="sub1" value="<?=$_GET['sub1']?>">
@@ -230,13 +238,17 @@
         </div>
     </section>
     <footer>
-        <div class="footer_wrap">
-            <div class="logo">
-                <a href="#top"><img src="fonts/logo.svg" alt></a>
+        <div class="footer-container">
+            <div class="footer_wrap">
+                <div class="logo footer-logo">
+                    <a href="#top"><img class="logo" src="TeslaX-logo.png" alt></a>
+                </div>
+                
             </div>
-            <span>©2022 All rights Reserved</span>
+            <div class="footer-items"><a href="conditions">Политика конфиденциальности</a><a href="politics">Условия и положения</a></div>
         </div>
-        <div class="footer-items"><a href="conditions">Политика конфиденциальности</a><a href="politics">Условия и положения</a></div>
+        <!-- /.footer-container -->
+        <span>©2022 All rights Reserved</span>
     </footer>
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
