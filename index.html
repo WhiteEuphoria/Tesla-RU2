@@ -2,12 +2,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link rel="stylesheet" href="css/all.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/grid12.css">
     <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon.ico">
@@ -53,7 +53,9 @@
                     <h1>Подключитесь к проекту Илона Маска и 
                         зарабатывайте от 4000$ ежемесячно!</h1>
                     <span>Откройте счёт и начните зарабатывать</span>
-                    <form action="" method="POST" id="leadform1">
+                    <form action="" method="POST" id="g-form-1">
+                        <h2 class="g-form__title g-form__title_respond"></h2>
+                        <div class="g-form__preloader"></div>
                         <div class="input_wrapper">
                             <div class="wrap">
                                 <input type="text" name="firstname" placeholder="Имя" required id="fname">
@@ -76,7 +78,10 @@
                             <input type="hidden" name="sub2" value="<?=$_GET['sub2']?>">
                             <input type="hidden" name="sub3" value="<?=$_GET['sub3']?>">
                             <input type="hidden" name="p" value="<?=$_GET['p']?>"> -->
-
+                            <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden">
+                                <label for="honeypot">Помогает бороться со спамом. Должно быть пустым!</label>
+                                <input id="honeypot" type="text" name="honeypot" value="">
+                            </fieldset>
                             <button class="submit_btn registration-btn" type="submit">
                                 Начать зарабатывать
                             </button>
@@ -305,7 +310,8 @@
     ]
 </script>
 <script src="js/script.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="g-form/g-form.js"></script>
 <link rel="stylesheet" href="intl/intlTelInput.css">
 <script src="intl/intlTelInput.js"></script>
 <script>
