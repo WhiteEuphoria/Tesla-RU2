@@ -538,6 +538,7 @@ a.anchor {
     background-image: url("../images/01.jpg");
     background-size: 100% 100%;
     
+    
 }
 .subheading{
     font-size: 32px;
@@ -547,6 +548,10 @@ a.anchor {
     display: block;
     color: white;
 }
+.calc-whatis{
+    font-size: 22px;
+    color: white;
+}
 .calulator-form .wrap{
     display: flex;
     /* gap:15px; */
@@ -554,7 +559,7 @@ a.anchor {
     align-items: center;
     flex-direction: column;
     height: 300px;
-    width: 380px;
+    width: 400px;
     margin: auto;
     align-items: center;
 
@@ -570,6 +575,7 @@ a.anchor {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white
 }
 
 .calulator-form .wrap div span:first-child{
@@ -585,7 +591,8 @@ a.anchor {
     font-weight: 800;
     line-height: 88px;
     width: 100%;
-    color: white
+    color: white;
+    margin-bottom: 30px;
 }
 .calulator-form .wrap div:first-child{
     align-items: flex-end;
@@ -597,7 +604,7 @@ a.anchor {
 .label-div label{
     position: absolute;
     top: 0;
-    right: 20px;
+    right: 60px;
 }
 .calulator-form input, label.investment{
     height: 88px;
@@ -616,6 +623,9 @@ a.anchor {
     width:100%;
     margin-bottom: 20px;
     padding-left: 20px;
+    border: 2px solid #0077ffa1;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgb(0 15 228 / 82%);
 }
 /* .calulator-form input{
     padding-right:50px;
@@ -964,7 +974,7 @@ label.investment {
         margin-top: 15px;
     }
     .label-div label{
-        right: 40px;
+        right: 80px;
     }
     .deals_wrapper{
         justify-content: space-between;
