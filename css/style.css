@@ -12,6 +12,13 @@ body{
     font-family: 'Roboto',sans-serif;
     margin:0;
 }
+.t-range__value-txt{
+    color: black;
+    font-size: 30px;
+}
+.form__calc{
+    width: 60%;
+}
 .form{
     color: rgba(255, 255, 255, 1);
 }
