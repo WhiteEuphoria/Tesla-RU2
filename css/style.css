@@ -12,6 +12,7 @@ body{
     font-family: 'Roboto',sans-serif;
     margin:0;
 }
+/* calc-slider */
 .form__calc {
     width: 600px;
 }
@@ -19,8 +20,26 @@ body{
     font-size: 22px;
     margin-bottom: 40px;
 }
+.calc-slider__result{
+    font-size: 24px;
+    height:80px;
+}
+.calc-slider__eq{
+    font-size: 40px;
+    color: red;
+    margin-bottom: 9px;
+}
+.t-calc{
+    border: 2px solid #0077ffa1;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgb(0 15 228 / 82%);
+    background: none;
+    color: white;
+    padding: 6px;
+}
 .t-range__wrapper{
     height: 80px;
+    margin-bottom: 20px;
 }
 .t-range__wrapper div{
     font-size: 25px;
@@ -37,11 +56,9 @@ body{
 }
 
 .range{
-    padding: 0;
-    
-    
+    padding: 0;   
 }
-
+/* calc-slider */
 .form{
     color: rgba(255, 255, 255, 1);
 }
