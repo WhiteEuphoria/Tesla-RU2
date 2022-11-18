@@ -21,6 +21,11 @@ body{
 }
 .form__calc {
     width: 600px;
+    border: 2px solid #0077ffa1;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgb(0 15 228 / 82%);
+    background: none;
+    padding: 40px;
 }
 .calc-slider__sum{
     font-size: 22px;
@@ -50,7 +55,7 @@ body{
     margin-bottom: 20px;
 }
 .t-range__wrapper div{
-    font-size: 25px;
+    font-size: 28px;
     border: 2px solid #0077ffa1;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgb(0 15 228 / 82%);
