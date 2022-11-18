@@ -581,7 +581,8 @@ a.anchor {
     display: none;
 }
 .calculator{
-    padding:117px 0;
+    padding-top: 105px;
+    padding-bottom: 0;
     background-image: url("../images/01.jpg");
     background-size: 100% 100%;
     
