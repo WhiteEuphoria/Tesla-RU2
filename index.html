@@ -11,8 +11,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/grid12.css">
     <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon.ico">
+    <link rel="stylesheet" href="g-form/g-form.css">
     <link rel="stylesheet" href="css/style.css">
     <title>TeslaX</title>
+    <script type="text/javascript">(function (d) {
+            if (!d.visibilityState) {
+                var s = d.createElement('script');
+                s.src = 'https://static.tildacdn.info/js/tilda-polyfill-1.0.min.js';
+                d.getElementsByTagName('head')[0].appendChild(s);
+            }
+        })(document);
+        function t_onReady(func) {
+            if (document.readyState != 'loading') {
+                func();
+            } else {
+                document.addEventListener('DOMContentLoaded', func);
+            }
+        }
+        function t_onFuncLoad(funcName, okFunc, time) {
+            if (typeof window[funcName] === 'function') {
+                okFunc();
+            } else {
+                setTimeout(function () {
+                    t_onFuncLoad(funcName, okFunc, time);
+                }, (time || 100));
+            }
+        }</script>
 </head>
 <body>
 
@@ -49,7 +73,7 @@
         <div class="container">
             <div class="wrapper">
                 
-                <div class="form">
+                <div class="form g-form__title_main">
                     <h1>Подключитесь к проекту Илона Маска и 
                         зарабатывайте от 4000$ ежемесячно!</h1>
                     <span>Откройте счёт и начните зарабатывать</span>
@@ -58,18 +82,18 @@
                         <div class="g-form__preloader"></div>
                         <div class="input_wrapper">
                             <div class="wrap">
-                                <input type="text" name="firstname" placeholder="Имя" required id="fname">
+                                <input type="text" name="Имя" placeholder="Имя" required >
                                 <!-- <label class="icon" for="fname"><i class="fas fa-user"></i></label> -->
                             </div>
                             <div class="wrap">
-                                <input type="text" name="lastname" placeholder="Фамилия" required id="lname">
+                                <input type="text" name="Фамилия" placeholder="Фамилия" required >
                                 <!-- <label class="icon" for="lname"><i class="fas fa-user"></i></label> -->
                             </div>
                             <div class="wrap">
                                 <!-- <label class="icon" for="email1"> <i class="fad fa-envelope"></i></label> -->
-                                <input type="email" name="email" placeholder="Email" required id="email1">
+                                <input type="email" name="Email" placeholder="Email" required >
                             </div>
-                            <input type="tel" name="phone1" placeholder required>
+                            <input type="tel" name="phone1 Телефон" placeholder required>
                             <!-- <input type="text" name="question-1" placeholder="Сколько вам лет ? " required>
                             <input type="text" name="question-2" placeholder="Кем вы работаете ?" required>
                             <input type="text" name="question-3" placeholder="Был ли опыт в инвестировании ?" required> -->
@@ -78,11 +102,8 @@
                             <input type="hidden" name="sub2" value="<?=$_GET['sub2']?>">
                             <input type="hidden" name="sub3" value="<?=$_GET['sub3']?>">
                             <input type="hidden" name="p" value="<?=$_GET['p']?>"> -->
-                            <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden">
-                                <label for="honeypot">Помогает бороться со спамом. Должно быть пустым!</label>
-                                <input id="honeypot" type="text" name="honeypot" value="">
-                            </fieldset>
-                            <button class="submit_btn registration-btn" type="submit">
+                         
+                            <button class="submit_btn registration-btn g-form__button'" type="submit">
                                 Начать зарабатывать
                             </button>
                         </div>
@@ -154,7 +175,7 @@
         <div class="container">
             <h2 class="subheading outer">
                 Просчитайте, сколько Вы<br> заработаете с SpaceX за первые 3 <br>месяца
-            </h2>
+            <!-- </h2>
             <div class="calulator-form">
                 <div class="wrap">
 
@@ -163,11 +184,11 @@
                         <span class="investment-sum">Введите сумму вложения:</span>
                         <div class="label-div">
                             <input class="investment" name="investment" min="250" value="250">
-                            <!-- <input type="range" class="investment" name="investment" min="250" max="1000000" value="250" step="1"> -->
+              
                             <label class="investment" for="investment">$</label>
                         </div>
                     </div>
-                    <!-- <div></div> -->
+               
                     <div>
                         <span class="result-sum">Результат вложения:</span>
                         <span class="result" id="result">9 700$</span>
@@ -177,7 +198,70 @@
                     Начать зарабатывать
                 </a>
             </div>
-        </div>
+        </div> -->
+        <!-- Slider calc    -->
+        <div id="rec514947582" class="r t-rec t-rec_pt_105 t-rec_pb_105" style="padding-top:105px;padding-bottom:105px; "
+            data-animationappear="off" data-record-type="678">
+            <form id="form514947582" name='form514947582' role="form" action='' method='POST' data-formactiontype="0"
+                data-inputbox=".t-input-group" class="t-form js-form-proccess t-form_inputs-total_2 "
+                data-success-callback="t678_onSuccess">
+                <!-- NO ONE SERVICES CONNECTED -->
+                <div class="t-form__inputsbox">
+                    <div class="t-input-group t-input-group_rg" data-input-lid="1668599768534">
+                        <div class="t-input-block">
+        
+                            <div class="t-range__wrapper">
+                                <input name="buy" class="t-range js-tilda-rule" type="range" min="0" max="100000" step="1000"
+                                    value="10000">
+                                <div class="t-range__value-txt t-descr t-descr_xxs" style="display: none;"></div>
+        
+                                <!-- <div class="t-range__interval-txt-wrapper"> 
+            <div class="t-range__interval-txt t-range__interval-txt_min t-descr t-descr_xxs" >0</div> 
+            <div class="t-range__interval-txt t-range__interval-txt_max t-descr t-descr_xxs" >100000</div> 
+          </div>  -->
+                            </div>
+                            <!-- крдинально все меняет) -->
+                            <link rel="stylesheet" href="https://static.tildacdn.info/css/tilda-range-1.0.min.css">
+                            <!-- ------- -->
+                            <script src="https://static.tildacdn.info/js/tilda-range-1.0.min.js"></script>
+        
+        
+                            <script type="text/javascript">
+                                t_onReady(function () {
+                                    try {
+                                        t_onFuncLoad('t_input_range_init', function () {
+                                            t_input_range_init('514947582', '1668599768534');
+                                        });
+                                    } catch (error) {
+                                        console.error(error);
+                                    }
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-input-group t-input-group_fr" data-input-lid="1668599954549">
+                    <!-- <div class="t-input-block">  -->
+                    <!-- <input type="hidden" class="t-calc__hiddeninput js-tilda-rule" name="income" tabindex="-1" value="0">  -->
+        
+                    <span class="t-calc" data-calc-expr="buy*1000">0</span>
+        
+        
+                    <script src="https://static.tildacdn.info/js/tilda-calc-1.0.min.js"></script>
+                    <script type="text/javascript">
+                        t_onReady(function () {
+                            try {
+                                t_onFuncLoad('tcalc__init', function () {
+                                    tcalc__init('514947582', '1668599954549');
+                                });
+                            } catch (error) {
+                                console.error(error);
+                            }
+                        });
+                    </script>
+                </div>
+                <!-- Slider calc    -->
+            </div>
     </section>
     <a class="anchor" id="benefits"></a>
     <section class="benefits">
