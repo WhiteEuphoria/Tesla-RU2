@@ -12,9 +12,25 @@ body{
     font-family: 'Roboto',sans-serif;
     margin:0;
 }
+.t-range__wrapper{
+    height: 80px;
+}
+.t-range__wrapper div{
+    font-size: 25px;
+}
+.t-range__wrapper input {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 .t-range__value-txt{
     color: black;
     font-size: 30px;
+}
+.range{
+    padding: 0;
+    
+    
 }
 .form__calc{
     width: 60%;
